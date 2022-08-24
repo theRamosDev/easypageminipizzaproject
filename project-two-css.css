@@ -1,0 +1,292 @@
+:root {
+    --main-color: rgb(0, 0, 0);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./photo-one.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+    width: 100%;
+    position: absolute;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+.radio-player {
+    width: 100%;
+    padding-left: 5rem;
+}
+
+main {
+    display: block;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    /* width: 200px; */
+    /* position: absolute; */
+    top: 5vh;
+    left: 25vw;
+    right: 25vw;
+    height: 90%;
+    word-wrap: break-word;
+}
+
+.p-one,
+.p-two {
+    font-weight: 900;
+    color: var(--main-color);
+    font-size: 2rem;
+    margin-top: 25%;
+    text-shadow: 2px 2px 5px rgb(255, 254, 254);
+    word-wrap: break-word;
+}
+
+.p-two {
+    margin-top: 2rem;
+    color: white;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+
+.span-one {
+    color: rgb(126, 18, 18);
+    text-shadow: 2px 2px 5px rgb(255, 255, 255);
+}
+
+.p-three {
+    text-transform: uppercase;
+    font-weight: 900;
+    background-color: rgb(126, 18, 18);
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+    width: 50%;
+    border-radius: 0.5rem;
+    margin: 2rem auto;
+}
+
+.span-two {
+    text-transform: initial;
+    font-size: 70%;
+    color: rgb(155, 155, 155);
+}
+
+.a-one {
+    text-align: center;
+    text-transform: lowercase;
+    text-transform: initial;
+    font-size: 70%;
+}
+
+.a-one:link {
+    color: gray;
+}
+
+.a-one:visited {
+    color: rgb(155, 155, 155);
+}
+
+.a-one:hover {
+    color: white;
+    text-decoration: none;
+    font-size: 100%;
+}
+
+.a-one:active {
+    color: rgb(136, 123, 255);
+}
+
+.p-four {
+    font-size: 150%;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgb(255, 254, 254);
+    margin-top: 0rem;
+}
+
+.photo-four {
+    width: 20%;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 1rem;
+    margin-bottom: 6.6rem;
+}
+
+.photo-four:hover {
+    filter:invert(30%);
+    cursor: pointer;
+    transition-duration: 1s;
+}
+
+footer {
+    background-color: rgb(126, 18, 18, 0.3);
+    color: white;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    font-size: 10px;
+    padding: 0.1rem;
+}
+
+footer:nth-child(3) {
+    text-align: center;
+}
+
+.span-three {
+    color: rgb(155, 155, 155);
+}
+
+.a-three {
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+}
+
+.a-three:hover {
+    text-decoration: underline;
+    
+}
+
+@media only screen and (min-width: 320px) { 
+    body {
+        width: 100%;
+    }
+    .container {
+        width: 100%;
+    }
+    .radio-player{
+        width: 34px;
+        margin: 0 auto;  
+        padding: 0;   
+    }
+    .p-three {
+        width: 25%;
+    }
+}
+
+@media only screen and (min-width: 480px) {   
+    body {
+        width: 100%;
+    
+    }
+    .container {
+        width: 100%;
+    }
+    .radio-player {
+        width: 340px;
+        margin: 0 auto;
+        padding: 0;  
+    }
+    .p-three {
+        width: 25%;
+    }
+}
+
+@media only screen and (min-width: 600px) { 
+    body {
+        width: 100%;
+    
+    }
+    .container {
+        width: 100%;
+    }
+    .radio-player {
+        width: 340px;
+        margin: 0 auto;
+        padding: 0;  
+    }
+    .p-three {
+        width: 20%;
+    }
+
+}
+
+@media only screen and (min-width: 768px) { 
+    body {
+        width: 100%;
+    
+    }
+    .container {
+        width: 100%;
+    }
+    .radio-player {
+        width: 340px;
+        margin: 0 auto;
+        padding: 0;  
+    }
+    .p-three {
+        width: 15%;
+    }
+
+}
+
+@media only screen and (min-width: 900px) { 
+    body {
+        width: 100%;
+    
+    }
+    .container {
+        width: 100%;
+    }
+    .radio-player {
+        width: 340px;
+        margin: 0 auto;
+        padding: 0;  
+    }
+    .p-three {
+        width: 15%;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) { 
+    body {
+        width: 100%;
+    
+    }
+    .container {
+        width: 100%;
+    }
+    .radio-player {
+        width: 340px;
+        margin: 0 auto;
+        padding: 0;  
+    }
+
+    main {
+        margin-bottom: 300px;
+    }
+
+     .p-one,
+     .p-two,
+     .p-four {
+        font-size: 80px;
+    }
+    .p-three {
+        margin-top: 10rem;
+        font-size: 30px;
+        width: 40%;
+    }
+
+    .photo-four {
+        width: 15%;
+        height: auto;
+    }
+
+    footer {
+        font-size: 15px;
+    }
+
+}
+
+
