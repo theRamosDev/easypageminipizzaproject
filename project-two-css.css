@@ -13,7 +13,8 @@
 body {
     background-image: url(./photo-one.jpg);
     background-size: cover;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     width: 100%;
     position: absolute;
     overflow: scroll;
@@ -22,11 +23,6 @@ body {
 
 ::-webkit-scrollbar {
     width: 0;
-}
-
-.radio-player {
-    width: 100%;
-    padding-left: 5rem;
 }
 
 main {
@@ -39,7 +35,7 @@ main {
     top: 5vh;
     left: 25vw;
     right: 25vw;
-    height: 90%;
+    height: auto;
     word-wrap: break-word;
 }
 
@@ -164,13 +160,13 @@ footer:nth-child(3) {
     .container {
         width: 100%;
     }
-    .radio-player{
-        width: 34px;
-        margin: 0 auto;  
-        padding: 0;   
-    }
     .p-three {
-        width: 25%;
+        width: 35%;
+    }
+
+    .footer {
+        width: 100%;
+        text-align: center;
     }
 }
 
@@ -182,13 +178,16 @@ footer:nth-child(3) {
     .container {
         width: 100%;
     }
-    .radio-player {
-        width: 340px;
-        margin: 0 auto;
-        padding: 0;  
+
+    .photo-four {
+        width: 20%;
     }
     .p-three {
-        width: 25%;
+        width: 35%;
+    }
+    .footer {
+        width: 100%;
+        text-align: center;
     }
 }
 
@@ -200,13 +199,25 @@ footer:nth-child(3) {
     .container {
         width: 100%;
     }
-    .radio-player {
-        width: 340px;
-        margin: 0 auto;
-        padding: 0;  
-    }
+    .p-one,
+    .p-two,
+    .p-four {
+       font-size: 40px;
+   }
+   .p-three {
+       font-size: 15px;
+   }
     .p-three {
-        width: 20%;
+        width: 25%;
+    }
+
+    .photo-four {
+        width: 15%;
+        margin-top: 1rem;
+    }
+    .footer {
+        width: 100%;
+        text-align: center;
     }
 
 }
@@ -219,13 +230,16 @@ footer:nth-child(3) {
     .container {
         width: 100%;
     }
-    .radio-player {
-        width: 340px;
-        margin: 0 auto;
-        padding: 0;  
-    }
     .p-three {
+        width: 20%;
+    }
+
+    .photo-four {
         width: 15%;
+    }
+    .footer {
+        width: 100%;
+        text-align: center;
     }
 
 }
@@ -238,13 +252,12 @@ footer:nth-child(3) {
     .container {
         width: 100%;
     }
-    .radio-player {
-        width: 340px;
-        margin: 0 auto;
-        padding: 0;  
-    }
     .p-three {
-        width: 15%;
+        width: 20%;
+    }
+    .footer {
+        width: 100%;
+        text-align: center;
     }
 
 }
@@ -257,14 +270,9 @@ footer:nth-child(3) {
     .container {
         width: 100%;
     }
-    .radio-player {
-        width: 340px;
-        margin: 0 auto;
-        padding: 0;  
-    }
 
     main {
-        margin-bottom: 300px;
+        margin-bottom: 200px;
     }
 
      .p-one,
@@ -279,12 +287,14 @@ footer:nth-child(3) {
     }
 
     .photo-four {
+        margin-top: 1rem;
         width: 15%;
-        height: auto;
     }
 
     footer {
+        width: 100%;
         font-size: 15px;
+        text-align: center;
     }
 
 }
